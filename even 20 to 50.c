@@ -1,14 +1,15 @@
 #include<stdio.h>
 main()
 {
-	int i,n;
+	int i=1,n,sum=0;
 	scanf("%d",&n);
-	for(i=20;i<=n;i++)
-	{
-		if(i%2==0)
-			{
-			printf(" %d even",i);
-		}
-	}
+	while(i<=n)
 	
+		if(i%2==0)
+		sum=sum+1;
+	
+	{
+		printf("%d",i);
+		i++;
+	}
 }

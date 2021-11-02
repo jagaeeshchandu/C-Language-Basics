@@ -11,7 +11,7 @@ printf("%d",a);
 int prime(int n)
 {
 	int i,sum=0;
-	for(i=1;1<=n;i++)
+	for(i=1;i<=n;i++)
 	{
 		if(n%i==0)
 		{

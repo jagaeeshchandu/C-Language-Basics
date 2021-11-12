@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-	int arr[10],i,n;
+	int arr[10],i,n,small,position;
 	printf("enter the numbers");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
@@ -10,9 +10,12 @@ void main()
 	}
 	for(i=0;i<n;i++)
 	{
-		if(arr[i]%2==0)
+		if(small>arr[i])
 		{
-		printf("arr[%d]=%d\n",i,arr[i]);
+			small=arr[i];
+			position=i;
+		}
 	}
-	}
-}
+
+	 printf("%d\n%d",small,position);
+}  
